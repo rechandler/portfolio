@@ -75,10 +75,10 @@ function HeroPost({
 
 export default async function Page() {
   const [settings, heroPost] = await Promise.all([
-    sanityFetch<SettingsQueryResult>({
+    sanityFetch({
       query: settingsQuery,
     }),
-    sanityFetch<HeroQueryResult>({ query: heroQuery }),
+    sanityFetch({ query: heroQuery }),
   ]);
 
   return (
