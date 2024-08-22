@@ -125,7 +125,7 @@ const Skills = () => {
                     
                   })}
                 </div>
-                <div className="float-right">
+                <div className="small:float-left middle:float-right">
                   {frameworksRight.map((framework) => {
                     return (
                       <div

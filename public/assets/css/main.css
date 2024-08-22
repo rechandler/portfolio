@@ -1947,7 +1947,17 @@ h6 {
 }
 
 @media (max-width: 1040px) {
+  .middle\:float-right {
+    float: right;
+  }
+
   .middle\:block {
     display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .small\:float-left {
+    float: left;
   }
 }
