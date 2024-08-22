@@ -15,7 +15,7 @@ const Skills = dynamic(() => import("@/layout/skills"), {
 const Index = () => {
   return (
     <KuraLayout>
-      {/* <MobileMenu /> */}
+      <MobileMenu />
       <Header />
       <Hero />
       <Posts />

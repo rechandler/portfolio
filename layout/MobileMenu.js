@@ -45,10 +45,19 @@ const MobileMenu = ({ dark }) => {
             <li className="float-left w-full">
               <a
                 className="text-black inline-block p-0 font-poppins font-medium"
-                href="#portfolio"
+                href="#posts"
                 onClick={() => setToggle(false)}
               >
-                Portfolio
+                Posts
+              </a>
+            </li>
+            <li className="float-left w-full">
+              <a
+                className="text-black inline-block p-0 font-poppins font-medium"
+                href="#accomplishments"
+                onClick={() => setToggle(false)}
+              >
+                Accomplishments
               </a>
             </li>
             <li className="float-left w-full">
@@ -67,24 +76,6 @@ const MobileMenu = ({ dark }) => {
                 onClick={() => setToggle(false)}
               >
                 Timeline
-              </a>
-            </li>
-            <li className="float-left w-full">
-              <a
-                className="text-black inline-block p-0 font-poppins font-medium"
-                href="#price"
-                onClick={() => setToggle(false)}
-              >
-                Price
-              </a>
-            </li>
-            <li className="float-left w-full">
-              <a
-                className="text-black inline-block p-0 font-poppins font-medium"
-                href="#news"
-                onClick={() => setToggle(false)}
-              >
-                News
               </a>
             </li>
             <li className="float-left w-full">
