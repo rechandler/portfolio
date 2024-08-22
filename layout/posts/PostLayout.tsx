@@ -29,7 +29,7 @@ const Posts = () => {
             className="portfolio_list w-full h-auto clear-both float-left pt-[92px] gallery_zoom wow fadeInUp"
             data-wow-duration=".7s"
           >
-            <Swiper {...portfolioSlider} className="swiper-container">
+            {/* <Swiper {...portfolioSlider} className="swiper-container">
               <div className="swiper-wrapper">
                 <SwiperSlide className="swiper-slide">
                   <div className="list_inner w-full h-auto clear-both float-left">
@@ -256,7 +256,7 @@ const Posts = () => {
                   </ul>
                 </div>
               </div>
-            </Swiper>
+            </Swiper> */}
           </div>
         </div>
       </div>

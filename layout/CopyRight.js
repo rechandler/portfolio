@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const CopyRight = () => {
   return (
     <div className="kura_tm_section w-full h-auto clear-both float-left">
@@ -16,7 +18,9 @@ const CopyRight = () => {
               <ul>
                 <li className="mr-[20px] inline-block">
                   <a className="text-white" target="_blank" href="https://www.facebook.com/ryann.chandler.86">
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       className="svg"
                       src="assets/img/svg/social/facebook.svg"
                       alt=""
@@ -25,7 +29,9 @@ const CopyRight = () => {
                 </li>
                 <li className="mr-[20px] inline-block">
                   <a className="text-white" target="_blank" href="https://www.instagram.com/rynnnnno/">
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       className="svg"
                       src="assets/img/svg/social/instagram.svg"
                       alt=""
@@ -34,7 +40,9 @@ const CopyRight = () => {
                 </li>
                 <li className="mr-[20px] inline-block">
                   <a className="text-white" target="_blank" href="https://www.threads.net/@rynnnnno">
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       className="svg"
                       src="assets/img/svg/social/threads.svg"
                       alt=""
@@ -43,7 +51,9 @@ const CopyRight = () => {
                 </li>
                 <li className="inline-block">
                   <a className="text-white" target="_blank" href="https://www.linkedin.com/in/ryannchandler">
-                    <img
+                    <Image
+                      width={20}
+                      height={20}
                       className="svg"
                       src="assets/img/svg/social/linkedin.svg"
                       alt=""

@@ -153,46 +153,6 @@ const Skills = () => {
                   })}
                 </div>
               </div>
-
-              {/* <div
-                className="dodo_progress wow fadeInUp"
-                data-wow-duration=".7s"
-                data-wow-delay=".2s"
-              >
-                <div className="progress_inner" data-value={95}>
-                  <span>
-                    <span className="label">HTML &amp; CSS</span>
-                    <span className="number">95%</span>
-                  </span>
-                  <div className="background">
-                    <div className="bar">
-                      <div className="bar_in" />
-                    </div>
-                  </div>
-                </div>
-                <div className="progress_inner" data-value={80}>
-                  <span>
-                    <span className="label">JavaScript</span>
-                    <span className="number">80%</span>
-                  </span>
-                  <div className="background">
-                    <div className="bar">
-                      <div className="bar_in" />
-                    </div>
-                  </div>
-                </div>
-                <div className="progress_inner" data-value={0}>
-                  <span>
-                    <span className="label">WordPress</span>
-                    <span className="number">90%</span>
-                  </span>
-                  <div className="background">
-                    <div className="bar">
-                      <div className="bar_in" />
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
             <div
               className="right w-[40%] absolute right-0 top-0 bottom-[-220px] overflow-hidden"
