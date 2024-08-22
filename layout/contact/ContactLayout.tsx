@@ -56,6 +56,7 @@ const Contact = () => {
                   </li>
                   <li className="mb-[23px] w-full float-left">
                     <div className="list_inner w-full h-auto clear-both float-left relative pl-[30px]">
+                      <a href="https://www.linkedin.com/in/ryannchandler/" target="_blank">
                       <img
                         className="svg absolute left-0 w-[22px] h-[22px] top-1/2 mt-[-1px] translate-y-[-50%] text-secondary-color"
                         src="assets/img/logo/linkedin.svg"
@@ -64,6 +65,7 @@ const Contact = () => {
                       <span className="text-[18px] text-black font-poppins">
                         Find me on LinkedIn
                       </span>
+                      </a>
                     </div>
                   </li>
                 </ul>
