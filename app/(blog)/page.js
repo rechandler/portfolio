@@ -5,7 +5,7 @@ import KuraLayout from "@/layout/KuraLayout";
 import Posts from '@/layout/posts'
 import Accomplishments from '@/layout/accomplishments'
 import Contact from '@/layout/contact'
-import MobileMenu from "@/layout/MobileMenu";
+import MobileMenu from "@/layout/mobileMenu";
 
 import dynamic from "next/dynamic";
 const Skills = dynamic(() => import("@/layout/skills"), {
