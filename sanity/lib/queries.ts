@@ -32,3 +32,5 @@ export const postQuery = defineQuery(`
     ${postFields}
   }
 `);
+
+export const highlightsQuery = defineQuery(`*[_type == "highlight"]|order(order asc)`);

@@ -56,4 +56,21 @@ export const description = [
   },
 ];
 
+export const yearsOfExperience = [
+  {
+    _key: "9f1a629887fe",
+    _type: "block",
+    children: [
+      {
+        _key: "4a58edd077880",
+        _type: "span",
+        marks: [],
+        text: "10+ years",
+      },
+    ],
+    markDefs: [],
+    style: "normal",
+  },
+];
+
 export const ogImageTitle = "A Next.js Blog with a Native Authoring Experience";
