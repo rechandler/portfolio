@@ -10,11 +10,10 @@ import { MoreStoriesQueryResult, PostQueryResult } from "@/sanity.types";
 import PostCards from "@/components/post/postCards";
 
 export default async function MoreStories(params: {
-  skip: string | undefined;
+  skip: string;
   limit: number;
 }) {
-  const query = params.skip ? moreStoriesSkipQuery : moreStoriesQuery;
-  const data = await sanityFetch({ query: query, params });
+  const data = await sanityFetch({ query: moreStoriesSkipQuery, params });
 
   return (
     <>

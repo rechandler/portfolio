@@ -2,7 +2,7 @@ import Avatar from "@/layout/posts/avatar"
 import DateComponent from "@/layout/posts/date"
 import { PostQueryResult } from "@/sanity.types"
 
-export default (post: PostQueryResult) => {
+const PostHeader = (post: PostQueryResult) => {
 
   if (!post?._id) return
 
@@ -26,3 +26,5 @@ export default (post: PostQueryResult) => {
     </section>
   )
 }
+
+export default PostHeader

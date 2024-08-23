@@ -3,7 +3,6 @@ import { Suspense } from "react";
 import MoreStories from "./more-stories";
 const Posts = () => {
 
-
   return (
     <div
       className="kura_tm_section w-full h-auto clear-both float-left"
@@ -23,7 +22,7 @@ const Posts = () => {
           >
             <aside>
               <Suspense>
-                <MoreStories limit={100} />
+                <MoreStories skip={""} limit={100} />
               </Suspense>
             </aside>
           </div>

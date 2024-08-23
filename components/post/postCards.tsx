@@ -2,7 +2,7 @@ import Image from "next/image"
 import CoverImage from "./coverImage"
 import Link from "next/link";
 
-export default ({ post }: { post: any}) => {
+const PostCards = ({ post }: { post: any}) => {
   const { _id, title, slug, coverImage, excerpt, author } = post;
 
   return (
@@ -26,3 +26,5 @@ export default ({ post }: { post: any}) => {
     </div>
   )
 }
+
+export default PostCards

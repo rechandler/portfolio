@@ -1,8 +1,9 @@
 import { PortableTextBlock } from "next-sanity"
 import PortableText from "../../portable-text"
+
 import { PostQueryResult } from "@/sanity.types"
 
-export default (post: PostQueryResult) => {
+const PostBody = (post: PostQueryResult) => {
   if (!post?._id) return
   return (
     <div className="post_body">
@@ -15,3 +16,5 @@ export default (post: PostQueryResult) => {
     </div>
   )
 }
+
+export default PostBody
