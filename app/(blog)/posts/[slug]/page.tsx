@@ -1,17 +1,11 @@
 import { defineQuery } from "groq";
 import type { Metadata, ResolvingMetadata } from "next";
-import { type PortableTextBlock } from "next-sanity";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
-import Avatar from "../../../../layout/posts/avatar";
 import CoverImage from "../../../../layout/posts/cover-image";
-import DateComponent from "../../../../layout/posts/date";
 import MoreStories from "@/layout/posts/more-stories";
-import PortableText from "../../portable-text";
 
-import * as demo from "@/sanity/lib/demo";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { postQuery, settingsQuery } from "@/sanity/lib/queries";
 import { resolveOpenGraphImage } from "@/sanity/lib/utils";

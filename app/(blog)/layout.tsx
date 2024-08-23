@@ -5,7 +5,7 @@ import "@css/main.css";
 import "@css/modalboxes.css";
 import "@css/plugins.css";
 import { Mulish, Poppins } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import State from "@/context/context";
 
 /** google fonts */
