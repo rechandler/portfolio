@@ -5,7 +5,7 @@ import MobileMenu from "@/layout/mobileMenu"
 const PostLayout = ({ children }: { children: React.ReactNode}) => {
   return (
     <KuraLayout>
-      <MobileMenu />
+      <MobileMenu showMenu={false} />
       <Header showMenu={false} />
       {children}
     </KuraLayout>

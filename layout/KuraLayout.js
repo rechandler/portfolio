@@ -7,6 +7,7 @@ const KuraLayout = ({ children }) => {
     kuraUtilit.dataImage();
     kuraUtilit.imgToSVG();
     kuraUtilit.animation();
+    kuraUtilit.preloader();
   }, []);
 
   return (

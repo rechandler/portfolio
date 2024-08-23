@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const MobileMenu = ({ title }: {title: string | undefined}) => {
+const MobileMenu = ({ title, showMenu = true }: {title: string | undefined, showMenu: Boolean}) => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="kura_tm_mobile_menu w-full h-auto fixed top-0 left-0 hidden z-[10] middle:block">
@@ -12,16 +12,16 @@ const MobileMenu = ({ title }: {title: string | undefined}) => {
               {title}
             </a>
           </div>
-          <div className="trigger leading-[0]">
+          {showMenu && <div className="trigger leading-[0]">
             <div className="hamburger hamburger--slider">
               <div className="hamburger-box" onClick={() => setToggle(!toggle)}>
                 <div className="hamburger-inner" />
               </div>
             </div>
-          </div>
+          </div>}
         </div>
       </div>
-      <div
+      {showMenu && <div
         className="dropdown w-full h-auto clear-both float-left bg-white hidden"
         style={{ display: toggle ? "block" : "none" }}
       >
@@ -83,7 +83,7 @@ const MobileMenu = ({ title }: {title: string | undefined}) => {
             </li>
           </ul>
         </div>
-      </div>
+      </div>}
     </div>
   );
 };

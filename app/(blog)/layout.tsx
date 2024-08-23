@@ -34,7 +34,7 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={fontFamily}>
-        <Preloader />
+        {/* <Preloader /> */}
         <State>{children}</State>
       </body>
     </html>

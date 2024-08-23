@@ -31,7 +31,7 @@ export const kuraUtilit = {
 
     setTimeout(() => {
       document.querySelector("body").classList.add("opened");
-    }, 3000);
+    }, 100);
 
     var speed = 1000;
 
