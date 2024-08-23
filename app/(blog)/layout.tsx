@@ -1,4 +1,3 @@
-import Preloader from "@/layout/Preloader";
 import "@css/custom.css";
 import "@css/dark.css";
 import "@css/main.css";
@@ -7,6 +6,9 @@ import "@css/plugins.css";
 import { Mulish, Poppins } from "next/font/google";
 import "../globals.css";
 import State from "@/context/context";
+import { draftMode } from "next/headers";
+import AlertBanner from "./alert-banner";
+import { VisualEditing } from "next-sanity";
 
 /** google fonts */
 const poppins = Poppins({
@@ -34,8 +36,10 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={fontFamily}>
+        {draftMode().isEnabled && <AlertBanner />}
         {/* <Preloader /> */}
         <State>{children}</State>
+        {draftMode().isEnabled && <VisualEditing />}
       </body>
     </html>
   );
