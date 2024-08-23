@@ -1180,3 +1180,40 @@ body.dark .kura_tm_settings .cursor li .svg,
   -webkit-animation: myAnim 2s infinite 0.6s;
   animation: myAnim 2s infinite 0.6s;
 }
+
+.blogpage .text-secondary-color, .blogpage h2{
+  color: var(--secondary-color);
+}
+
+.blogpage {
+  background-color: #30323e;
+}
+
+.blogpage .container {
+  max-width: 900px;
+}
+
+.blogpage .mask {
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: black;
+  height: 60vh;
+  width: 100%;
+}
+
+.blog_hero {
+  position: relative;
+  top: -185px;
+}
+
+.post_body {
+  position: relative;
+  top: -120px;
+}
+
+.stories_container {
+  
+}

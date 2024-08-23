@@ -22,7 +22,7 @@ const CopyRight = () => {
                       width={20}
                       height={20}
                       className="svg"
-                      src="assets/img/svg/social/facebook.svg"
+                      src="/assets/img/svg/social/facebook.svg"
                       alt=""
                     />
                   </a>
@@ -33,7 +33,7 @@ const CopyRight = () => {
                       width={20}
                       height={20}
                       className="svg"
-                      src="assets/img/svg/social/instagram.svg"
+                      src="/assets/img/svg/social/instagram.svg"
                       alt=""
                     />
                   </a>
@@ -44,7 +44,7 @@ const CopyRight = () => {
                       width={20}
                       height={20}
                       className="svg"
-                      src="assets/img/svg/social/threads.svg"
+                      src="/assets/img/svg/social/threads.svg"
                       alt=""
                     />
                   </a>
@@ -55,7 +55,7 @@ const CopyRight = () => {
                       width={20}
                       height={20}
                       className="svg"
-                      src="assets/img/svg/social/linkedin.svg"
+                      src="/assets/img/svg/social/linkedin.svg"
                       alt=""
                     />
                   </a>

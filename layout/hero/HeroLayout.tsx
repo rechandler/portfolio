@@ -1,9 +1,7 @@
-"use client";
-import { context } from "@/context/context";
-import { useContext } from "react";
+"use server";
 import Image from 'next/image'
 import { PortableText } from "next-sanity";
-import { Highlight, HighlightsQueryResult, SettingsQueryResult } from "@/sanity.types";
+import { SettingsQueryResult } from "@/sanity.types";
 import { urlForImage } from "@/sanity/lib/utils";
 
 const services = [
@@ -13,8 +11,7 @@ const services = [
 ];
 
 const Hero = (
-  {settings, highlights}: {settings: SettingsQueryResult, highlights: HighlightsQueryResult}) => {
-  const { setServiceModal, modalToggle } = useContext(context);
+  {settings}: {settings: SettingsQueryResult}) => {
 
   const myImage = urlForImage(settings?.picture);
   return (

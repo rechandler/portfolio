@@ -21,7 +21,13 @@ export const heroQuery = defineQuery(`
 `);
 
 export const moreStoriesQuery = defineQuery(`
-  *[_type == "post" && _id != $skip && defined(slug.current)] | order(date desc, _updatedAt desc) [0...$limit] {
+  *[_type == "post" && defined(slug.current)] | order(date desc, _updatedAt desc) [0...2] {
+    ${postFields}
+  }
+`);
+
+export const moreStoriesSkipQuery = defineQuery(`
+  *[_type == "post" && _id != $skip && defined(slug.current)] | order(date desc, _updatedAt desc) [0...2] {
     ${postFields}
   }
 `);

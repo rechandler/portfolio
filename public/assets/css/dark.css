@@ -2,28 +2,28 @@
 
 body.dark{
 	background-color: #494b50;
-	color: #a7afbd;
+	color: #e7e9ec;
 }
 body.dark ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #a7afbd;
+    color: #e7e9ec;
 }
 body.dark :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #a7afbd;
+   color: #e7e9ec;
    opacity:  1;
 }
 body.dark ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #a7afbd;
+   color: #e7e9ec;
    opacity:  1;
 }
 body.dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #a7afbd;
+   color: #e7e9ec;
 }
 body.dark ::-ms-input-placeholder { /* Microsoft Edge */
-   color: #a7afbd;
+   color: #e7e9ec;
 }
 
 body.dark ::placeholder { /* Most modern browsers support this now. */
-   color: #a7afbd;
+   color: #e7e9ec;
 }
 
 body.dark::-webkit-scrollbar {
@@ -57,7 +57,7 @@ body.dark .kura_tm_mobile_menu .dropdown{
 body.dark .kura_tm_mobile_menu .dropdown .dropdown_inner ul li a{
 	color: #fff;
 }
-body.dark .kura_tm_hero{
+body.dark .kura_tm_hero {
 	background-color: #303134;
 }
 body.dark .hamburger-inner, 
@@ -101,7 +101,7 @@ body.dark .kura_tm_modalbox .main_details .detailbox .first{
 	color: #fff;
 }
 body.dark .kura_tm_modalbox .main_details .detailbox span a{
-	color: #a7afbd;
+	color: #e7e9ec;
 }
 body.dark .kura_tm_modalbox .main_details .detailbox .share li a{
 	color: #fff;
@@ -122,7 +122,7 @@ body.dark .kura_tm_swiper_progress .pagination_progress .all span{
 	background-color: rgba(255,255,255,.5);
 }
 body.dark .kura_tm_skills .text p{
-	color: #a7afbd;
+	color: #e7e9ec;
 }
 body.dark .kura_tm_timeline .timeline_list ul li .list_inner:nth-child(2) span{
 	color: #fff;
@@ -154,14 +154,14 @@ body.dark .kura_tm_contact .short ul li .list_inner span{
 }
 body.dark .kura_tm_contact .fields ul li input{
 	border: 1px solid rgba(255,255,255,.1);
-	color: #a7afbd;
+	color: #e7e9ec;
 }
 body.dark .kura_tm_contact .fields ul li input:focus{
 	border: 1px solid rgba(255,255,255,.3);
 }
 body.dark .kura_tm_contact .fields .last textarea{
 	border: 1px solid rgba(255,255,255,.1);
-	color: #a7afbd;
+	color: #e7e9ec;
 }
 body.dark .kura_tm_contact .fields .last textarea:focus{
 	border: 1px solid rgba(255,255,255,.3);

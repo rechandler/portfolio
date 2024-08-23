@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Suspense } from "react";
 
-import Avatar from "./avatar";
-import CoverImage from "./cover-image";
-import DateComponent from "./date";
-import MoreStories from "./more-stories";
+import Avatar from "../../layout/posts/avatar";
+import CoverImage from "../../layout/posts/cover-image";
+import DateComponent from "../../layout/posts/date";
+// import MoreStories from "./more-stories";
 import Onboarding from "./onboarding";
 import PortableText from "./portable-text";
 
@@ -102,7 +102,7 @@ export default async function Page() {
             More Stories
           </h2>
           <Suspense>
-            <MoreStories skip={heroPost._id} limit={100} />
+            {/* <MoreStories skip={heroPost._id} limit={100} /> */}
           </Suspense>
         </aside>
       )}

@@ -3,7 +3,7 @@
 import { kuraUtilit } from "@/utility";
 import { useEffect, useState } from "react";
 
-const Header = ({ title }: { title: string | undefined}) => {
+const Header = ({ title, showMenu = true}: { title: string | undefined, showMenu: Boolean}) => {
   const [isToggled, setToggled] = useState(false);
   const toggleTrueFalse = () => {
     setToggled(!isToggled);
@@ -24,7 +24,7 @@ const Header = ({ title }: { title: string | undefined}) => {
               {title}
             </a>
           </div>
-          <div className="menu flex items-center">
+          {showMenu && <div className="menu flex items-center">
             <div className="list pr-[40px]">
               <ul className="anchor_nav" id="anchor_nav">
                 <li className="current mr-[20px] inline-block opacity-0 invisible relative left-[10px] transition-all duration-300">
@@ -91,7 +91,7 @@ const Header = ({ title }: { title: string | undefined}) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div>}
         </div>
       </div>
     </div>
