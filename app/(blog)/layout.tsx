@@ -9,6 +9,7 @@ import State from "@/context/context";
 import { draftMode } from "next/headers";
 import AlertBanner from "./alert-banner";
 import { VisualEditing } from "next-sanity";
+import { Analytics } from "@vercel/analytics/react"
 
 /** google fonts */
 const poppins = Poppins({
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
         {draftMode().isEnabled && <AlertBanner />}
         {/* <Preloader /> */}
         <State>{children}</State>
+        <Analytics />
         {draftMode().isEnabled && <VisualEditing />}
       </body>
     </html>
