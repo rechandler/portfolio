@@ -6,9 +6,9 @@ const PostCards = ({ post }: { post: any}) => {
   const { _id, title, slug, coverImage, excerpt, author } = post;
 
   return (
-    <div className="relative flex flex-col sm:flex-row xl:flex-col items-start">
-      <div className="order-1 sm:ml-6 xl:ml-0">
-        <h3 className="mb-1 text-slate-900 font-semibold">
+    <div className="relative flex flex-col sm:flex-row md:flex-col items-start">
+      <div className="order-1 sm:ml-6 md:ml-0">
+        <h3 className="mb-1 md:mt-10 xl:mt-0 text-slate-900 font-semibold">
           {title}
         </h3>
         <p className="text-pretty mb-4 text-lg leading-relaxed">{excerpt}</p>
