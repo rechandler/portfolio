@@ -84,9 +84,6 @@ export default defineConfig({
     // Sets up AI Assist with preset prompts
     // https://www.sanity.io/docs/ai-assist
     assistWithPresets(),
-    umamiTool({
-      url: 'https://cloud.umami.is/share/dnLUuvyipqP8h3re/ryannchandler.dev'
-    }),
     // Vision lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
     process.env.NODE_ENV === "development" &&
