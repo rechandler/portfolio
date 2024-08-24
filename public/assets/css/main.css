@@ -1327,6 +1327,14 @@ h6 {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
 .grid-flow-row {
   grid-auto-flow: row;
 }
@@ -1423,6 +1431,10 @@ h6 {
   border-bottom-width: 1px;
 }
 
+.border-l-4 {
+  border-left-width: 4px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1445,6 +1457,11 @@ h6 {
 .border-slate-500 {
   --tw-border-opacity: 1;
   border-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-\[\#f9f9f9\] {
@@ -1700,6 +1717,10 @@ h6 {
 
 .pr-96 {
   padding-right: 24rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-center {
