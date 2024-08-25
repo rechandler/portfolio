@@ -53,7 +53,7 @@ export default function CustomPortableText({
           </a>
         );
       },
-    },
+    }
   };
 
   return (

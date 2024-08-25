@@ -1223,3 +1223,7 @@ body.dark .kura_tm_settings .cursor li .svg,
   list-style-type: decimal;
   padding: 1em;
 }
+
+.post_body p {
+  min-height: 24px;
+}
