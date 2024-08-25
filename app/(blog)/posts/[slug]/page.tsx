@@ -63,7 +63,7 @@ export default async function PostPage({ params }: Props) {
         <PostHeader {...post} />
         <PostBody {...post} />
       </section>
-      <aside className="pb-32 small:pl-4 small:pr-4 md:pl-40 md:pr-40">
+      <aside className="pb-32 small:pl-4 small:pr-4 sm:pl-4 sm:pr-4 lg:pl-40 lg:pr-40">
         <hr className="border-accent-2 mb-24 mt-28" />
         <h2 className="mb-8 text-6xl font-bold leading-tight tracking-tighter md:text-7xl">
           Recent Stories

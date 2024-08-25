@@ -11,11 +11,11 @@ export default function CoverImage(props: CoverImageProps) {
   const { image: source, priority } = props;
   const image = source?.asset?._ref ? (
     <Image
-      className="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
+      className="mb-6 shadow-md rounded-lg bg-slate-50 md:w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
       width={2000}
       height={1000}
       alt={source?.alt || ""}
-      src={urlForImage(source)?.height(1000).width(2000).url() as string}
+      src={urlForImage(source)?.url() as string}
       priority={priority}
     />
   ) : (
@@ -23,7 +23,7 @@ export default function CoverImage(props: CoverImageProps) {
   );
 
   return (
-    <div className="sm:mx-0">
+    <div className="sm:mx-0 w-full">
       {image}
     </div>
   );
