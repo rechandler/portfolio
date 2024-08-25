@@ -21,7 +21,6 @@ import post from "@/sanity/schemas/documents/post";
 import highlight from "@/sanity/schemas/documents/highlight";
 import settings from "@/sanity/schemas/singletons/settings";
 import { resolveHref } from "@/sanity/lib/utils";
-import {umamiTool} from 'sanity-plugin-umami-analytics-tool'
 
 const homeLocation = {
   title: "Home",
