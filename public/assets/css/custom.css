@@ -1227,3 +1227,8 @@ body.dark .kura_tm_settings .cursor li .svg,
 .post_body p {
   min-height: 24px;
 }
+
+.post_body ul {
+  list-style-type: circle;
+  padding: 1em;
+}
