@@ -1232,3 +1232,7 @@ body.dark .kura_tm_settings .cursor li .svg,
   list-style-type: circle;
   padding: 1em;
 }
+
+.post_body a {  
+  text-decoration-line: underline;
+}
