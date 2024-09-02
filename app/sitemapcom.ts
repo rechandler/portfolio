@@ -5,7 +5,7 @@ import { sanityFetch } from '@/sanity/lib/fetch'
 const COM_URL = 'https://www.ryannchandler.com'
 const POST_URL = '/posts/'
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export default async function sitemapcom(): Promise<MetadataRoute.Sitemap> {
 
     const results = await sanityFetch({
         query: allPostsForSitemapQuery,
