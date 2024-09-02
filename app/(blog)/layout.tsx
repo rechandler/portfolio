@@ -10,6 +10,7 @@ import { draftMode } from "next/headers";
 import AlertBanner from "./alert-banner";
 import { VisualEditing } from "next-sanity";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 /** google fonts */
 const poppins = Poppins({
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
         {/* <Preloader /> */}
         <State>{children}</State>
         <Analytics />
+        <SpeedInsights />
         {draftMode().isEnabled && <VisualEditing />}
       </body>
     </html>

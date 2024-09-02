@@ -33,7 +33,7 @@ export default function CustomPortableText({
         <h3 className="mb-2 mt-2 text-xl font-semibold">{children}</h3>
       ),
       h4: ({ children }) => (
-        <h4 className="mb-2 mt-2 text-lg font-semibold">{children}</h4>
+        <h4 className="mb-2 mt-2 text-lg text-white font-semibold">{children}</h4>
       ),
       h5: ({ children }) => (
         <h5 className="mb-2 text-sm font-semibold">{children}</h5>
