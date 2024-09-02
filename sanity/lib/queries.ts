@@ -40,3 +40,7 @@ export const postQuery = defineQuery(`
 `);
 
 export const highlightsQuery = defineQuery(`*[_type == "highlight"]|order(order asc)`);
+
+export const allPostsForSitemapQuery = defineQuery(`*[_type == "post"] {
+  "slug": slug.current
+}`);
