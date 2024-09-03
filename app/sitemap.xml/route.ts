@@ -4,7 +4,7 @@ import { sanityFetch } from '@/sanity/lib/fetch'
 
 const COM_URL = 'https://www.ryannchandler.com'
 const DEV_URL = 'https://www.ryannchandler.dev'
-const POST_URL = '/posts/'
+const POST_URL = 'posts'
 
 export async function GET(props: any): Promise<Response> {
 
@@ -30,13 +30,19 @@ function generateSiteMap(url: string, posts: any) {
       <url>
         <loc>${url}</loc>
         <lastmod>${date}</lastmod>
-        <changefreq>always</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>1</priority>
+      </url>
+      <url>
+        <loc>${url}/${POST_URL}</loc>
+        <lastmod>${date}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
       </url>
      ${posts.map((post: any) => {
       return `
         <url>
-          <loc>${url}${POST_URL}${post.slug}</loc>
+          <loc>${url}/${POST_URL}/${post.slug}</loc>
           <lastmod>${date}</lastmod>
           <changefreq>weekly</changefreq>
           <priority>0.8</priority>
