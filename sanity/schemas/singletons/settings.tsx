@@ -187,6 +187,34 @@ export default defineType({
       },
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: "aboutMeImage",
+      title: "About Me Cover Image",
+      type: "image",
+      options: {
+        hotspot: true,
+        aiAssist: {
+          imageDescriptionField: "alt",
+        },
+      },
+      fields: [
+        {
+          name: "alt",
+          type: "string",
+          title: "Alternative text",
+          description: "Important for SEO and accessiblity.",
+          validation: (rule) => {
+            return rule.custom((alt, context) => {
+              if ((context.document?.coverImage as any)?.asset?._ref && !alt) {
+                return "Required";
+              }
+              return true;
+            });
+          },
+        },
+      ],
+      validation: (rule) => rule.required(),
+    }),
   ],
   preview: {
     prepare() {

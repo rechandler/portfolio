@@ -1,10 +1,11 @@
 import { Image } from "next-sanity/image";
-
+import Link from "next/link";
 import { urlForImage } from "@/sanity/lib/utils";
 
 interface CoverImageProps {
   image: any;
   priority?: boolean;
+  link: string;
 }
 
 export default function CoverImage(props: CoverImageProps) {
@@ -24,7 +25,9 @@ export default function CoverImage(props: CoverImageProps) {
 
   return (
     <div className="sm:mx-0 w-full">
-      {image}
+      <Link href={props.link}>
+        {image}
+      </Link>
     </div>
   );
 }

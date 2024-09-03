@@ -270,6 +270,18 @@ export type Settings = {
     alt?: string;
     _type: "image";
   };
+  aboutMeImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  };
 };
 
 export type SanityImageCrop = {
@@ -531,6 +543,18 @@ export type SettingsQueryResult = {
     _type: "image";
   };
   picture?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  };
+  aboutMeImage?: {
     asset?: {
       _ref: string;
       _type: "reference";
