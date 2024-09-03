@@ -46,7 +46,7 @@ function Intro(props: { title: string | null | undefined; description: any }) {
   const title = props.title;
   const description = props.description
   return (
-    <section className="mt-16 mb-16 flex  flex-col items-center lg:mb-12 lg:flex-row lg:justify-between">
+    <section className="mt-16 mb-16 flex flex-col items-center lg:mb-12 lg:flex-row lg:justify-between">
       <h1 className="text-balance text-6xl text-secondary-color font-bold leading-tight tracking-tighter lg:pr-8 lg:text-8xl">
         {title}
       </h1>
