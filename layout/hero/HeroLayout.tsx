@@ -4,12 +4,6 @@ import { PortableText } from "next-sanity";
 import { SettingsQueryResult } from "@/sanity.types";
 import { urlForImage } from "@/sanity/lib/utils";
 
-const services = [
-  { id: 1, title: "Web Development", img: "assets/img/service/1.jpg" },
-  { id: 2, title: "Digital Marketing", img: "assets/img/service/2.jpg" },
-  { id: 3, title: "Graphic Design", img: "assets/img/service/3.jpg" },
-];
-
 const Hero = (
   {settings}: {settings: SettingsQueryResult}) => {
 

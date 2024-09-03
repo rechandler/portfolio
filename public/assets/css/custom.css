@@ -1236,3 +1236,7 @@ body.dark .kura_tm_settings .cursor li .svg,
 .post_body a {  
   text-decoration-line: underline;
 }
+
+.postspage .text-secondary-color {
+  color: var(--secondary-color);
+}

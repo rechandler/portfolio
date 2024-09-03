@@ -1,4 +1,3 @@
-import Image from "next/image"
 import CoverImage from "./coverImage"
 import Link from "next/link";
 
@@ -22,7 +21,7 @@ const PostCards = ({ post }: { post: any}) => {
           </svg>
         </Link>
       </div>
-      <CoverImage image={coverImage} priority={false} />
+      <CoverImage image={coverImage} priority={false} link={`/posts/${slug}`} />
     </div>
   )
 }
