@@ -20,8 +20,9 @@ const TimeLine = () => {
               >
                 <div className="list_inner w-1/3 float-left pr-[40px]">
                   <span className="inline-block text-[18px]">
-                    March, 2024 - Today
+                    March, 2024 - Present
                   </span>
+                  <br />
                   <span className="inline-block text-[18px]">
                     November, 2022 - March, 2024
                   </span>
@@ -70,6 +71,7 @@ const TimeLine = () => {
                   <span className="inline-block text-[18px]">
                     April, 2017 - June 2018
                   </span>
+                  <br />
                   <span className="inline-block text-[18px]">
                     June, 2015 - April, 2017
                   </span>
